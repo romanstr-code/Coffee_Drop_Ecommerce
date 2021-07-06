@@ -83,13 +83,13 @@ SITE_ID = 1
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
-ACCOUNT_USERNAME_MIN_LENGTH = 4
-LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/'
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email' # Authentication with username or emails
+ACCOUNT_EMAIL_REQUIRED = True # Email required for registration
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory' # Email verification is mandatory
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True # Enter email twice
+ACCOUNT_USERNAME_MIN_LENGTH = 4 # MinLength for Username 
+LOGIN_URL = '/accounts/login/' # Specifying a LogIn Url
+LOGIN_REDIRECT_URL = '/' # Redirect Back after Loggin In URL
 
 
 WSGI_APPLICATION = 'Coffee_Drop_Ecommerce.wsgi.application'
