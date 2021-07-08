@@ -3,11 +3,21 @@ html {
 }
 
 body {
-    background: url('/media/main-page.jpg') no-repeat center center fixed;
+    background: url('/media/home_page.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #555;
     font-family: 'Lobster';
+    height: 100%;
 }
+
+/* home greeting text */
+.hero-text {
+    position: absolute;
+    top: 40%;
+    color: white;
+}
+
+
 
 /* from Bulma */
 .icon {
@@ -55,13 +65,6 @@ body {
     border: 1px solid rgb(226, 71, 71) !important;
 }
 
-/* JUMBO */
-
-.jumbotron, 
-.jumbotron-fluid {
-   opacity: 0.5;
-    color: black;
-}
 
 
 
