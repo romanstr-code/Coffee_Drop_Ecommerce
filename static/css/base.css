@@ -18,6 +18,20 @@ body {
 }
 
 
+/*  ALL PRODUCTS PAGE     */
+
+/* Jumbotron */
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 3rem;
+    background-color: #e9ecef;
+    border-radius: 7.3rem;
+}
+
+.footer-color{
+    background-color:  rgb(24, 24, 13);
+}
 
 /* from Bulma */
 .icon {
@@ -67,6 +81,16 @@ body {
 
 
 
+.overlay{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #53514f;
+    z-index: -1;
+}
+
 
 
 /* -------------------------------- Media Queries */
@@ -91,5 +115,15 @@ body {
     .header-container {
         padding-top: 164px;
     }
+    
+}
+
+
+
+@media (min-width: 992px){
+.pt-lg-2, .py-lg-2 {
+    padding-top: .5rem!important;
+    background-color:  rgb(128, 126, 104);
+}
 }
 
