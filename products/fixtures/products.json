@@ -72,7 +72,7 @@
           "name":"BEWLEY'S RICH ROAST GROUND COFFEE",
           "description":"Bewley's Rich Roast Ground Coffee is a dark roast with a rich fruity flavour and velvety consistency. This product is Fairtrade certified and purchased at a premium from a number of Fairtrade farms.",
           "price":4.95,
-          "category":1,
+          "category":3,
           "rating":4.6,
           "image":"6bewylys.jpg"
        }
@@ -85,7 +85,7 @@
           "name":"Taylors Of Harrogate Rich Italian Ground Coffee",
           "description":"Ciao Amici - this elegant coffee takes you to the cobbles of Northern Italy. Inspired by the local roast style, it delivers rich flavours of dark chocolate and almond. It's seriously refined and dazzling after-dinner. Everything we do at Taylors is devoted to thrilling your taste buds. We individually roast each blend to its perfect point on a scale of 3 to 7, from light and gentle to dark and intense. We’re an independent family tea and coffee company from Harrogate in Yorkshire.",
           "price":4.95,
-          "category":1,
+          "category":3,
           "rating":4.6,
           "image":"7taylors.jpg"
        }
@@ -98,7 +98,7 @@
           "name":"BRAZIL FINE CUP FAIRTRADE GROUND COFFEE",
           "description":"Bewley’s Brazil Fine Cup Fairtrade Ground Coffee is Fairtrade certified and purchased at a premium from a number of Fairtrade farms",
           "price":3.95,
-          "category":1,
+          "category":3,
           "rating":4.6,
           "image":"8groundbweylys.jpg"
        }
@@ -111,7 +111,7 @@
           "name":"Roastworks Coffee Co Ltd. Ethiopia Ground Coffee",
           "description":"Speciality grade Arabica coffee Roasted in a way to highlight the coffee's intrinsic qualities. A very unique coffee with a soft acidity and notes of apricot, jasmine and a hint of Earl accentuating a light, tea-like finish. Roastworks is an independent speciality coffee roaster based in Devon. Just like with wine, the type of coffee variety, where it’s grown and how it’s processed will have a profound impact on the way it tastes. As a speciality coffee roaster we are committed to highlighting these intrinsic qualities and defining coffee, not by strength, but by flavour. Our range offers customers an accessible and comprehensive introduction to better coffee. It’s time to raise your coffee game.",
           "price":4.95,
-          "category":1,
+          "category":3,
           "rating":4.6,
           "image":"9ethiopia.jpg"
        }
@@ -124,7 +124,7 @@
           "name":"True Natural Goodness Organic Dark Roast Ground Coffee",
           "description":"True Natural Goodness Organic Dark Roast Ground Coffee is a strong, intense coffee that can be enjoyed by all coffee lovers. It has pronounced smoky overtones, with notes of dark cocoa. This organic ground coffee has been ethically sourced and as with all of True Natural Goodness products, it is a high quality product, without the big price tag. This complex coffee is perfect to help you relax and unwind after dinner. This product is certified organic and Fairtrade.",
           "price":4.95,
-          "category":1,
+          "category":3,
           "rating":4.6,
           "image":"10true.jpg"
        }
@@ -137,7 +137,7 @@
           "name":"Cafe Direct Machu Picchu Organic Fairtrade Ground Coffee",
           "description":"A richer, smoother tasting coffee with overtones of fine, dark chocolate.A perfect excuse for a top up.This fine arabica coffee is grown at high altitude deep in the inca heartlands of the Andes.",
           "price":4.95,
-          "category":1,
+          "category":3,
           "rating":4.6,
           "image":"11machu.jpg"
        }
@@ -161,7 +161,7 @@
        "fields":{
           "sku":"pp5001340168",
           "name":"Bialetti Moka Express 6-Cup Stovetop",
-          "description":"Bialetti's distinctive 8-sided aluminium pot features a 3-part system that uses pressurised steam to push the boiling water up through the coffee grounds: a lower water chamber, a filter coffee basket and a top chamber for the brewed coffee",
+          "description":"Bialetti's distinctive 8-sided aluminium pot features a 3-part system that uses pressurised steam to push the boiling water up through the coffee : a lower water chamber, a filter coffee basket and a top chamber for the brewed coffee",
           "price":50.55,
           "category":2,
           "image":"13bialetti.jpg"
@@ -192,10 +192,10 @@
        }
     },
     {
-       "pk":15,
+       "pk":16,
        "model":"products.product",
        "fields":{
-          "sku":"pp5001340169",
+          "sku":"pp5001340170",
           "name":"Chemex Classic Coffeemaker",
           "description":"The Chemex coffeemaker, together with Chemex-Bonded Coffee Filter, makes perfect coffee. Clear, pure, flavorful and without bitterness or sediment every time. The coffee only comes in contact with the scientifically designed filter and non-porous glass. With the Chemex method, you can make coffee as strong as you like without bitterness. Perfect for iced coffee and coffee flavoring for gourmet recipes.",
           "price":4.95,

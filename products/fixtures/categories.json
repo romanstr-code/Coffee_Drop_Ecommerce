@@ -3,8 +3,8 @@
        "pk":1,
        "model":"products.category",
        "fields":{
-          "name":"blends",
-          "friendly_name":"Blends"
+          "name":"beans",
+          "friendly_name":"Beans"
        }
     },
     {
@@ -14,5 +14,13 @@
           "name":"coffee_maker",
           "friendly_name":"Coffee Maker"
        }
-    }
+    },
+    {
+      "pk":3,
+      "model":"products.category",
+      "fields":{
+         "name":"grounded",
+         "friendly_name":"Grounded"
+      }
+   }
  ]
