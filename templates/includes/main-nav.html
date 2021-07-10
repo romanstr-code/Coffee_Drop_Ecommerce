@@ -14,9 +14,9 @@
                 Blends
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Beans</a>
-                <a href="" class="dropdown-item">Grounded</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?category=beans " class="dropdown-item">Beans</a>
+                <a href="{% url 'products' %}?category=grounded" class="dropdown-item">Grounded</a>
+                <a href="{% url 'products' %}?category=beans,grounded" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -25,14 +25,13 @@
                 Coffee Maker
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Moka</a>
-                <a href="" class="dropdown-item">Aeropress</a>
-                <a href="" class="dropdown-item">French Press</a>
-                <a href="" class="dropdown-item">Chemex</a>
-                <a href="" class="dropdown-item">All Coffee Makers</a>
+                <a href="{% url 'products' %}?category=moka" class="dropdown-item">Moka</a>
+                <a href="{% url 'products' %}?category=aeropress" class="dropdown-item">Aeropress</a>
+                <a href="{% url 'products' %}?category=french_press" class="dropdown-item">French Press</a>
+                <a href="{% url 'products' %}?category=chemex" class="dropdown-item">Chemex</a>
+                <a href="{% url 'products' %}?category=moka,aeropress,french_press,chemex" class="dropdown-item">All Coffee Makers</a>
             </div>
         </li>
-
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-silver" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About
