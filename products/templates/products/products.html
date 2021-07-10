@@ -21,8 +21,8 @@
         <h4 class="lead text-muted text-silver">We would like to present our products and offer you the opportunity to
             browse and pick the best product for you. </h4>
         <p>
-            <a href="#" class="shop-now-button btn btn-ls rounded-0 text-uppercase my-2">Discover Blends</a>
-            <a href="#" class="shop-now-button btn btn-ls rounded-0 text-uppercase my-2">Coffee Makers</a>
+            <a href="{% url 'products' %}?category=beans,grounded" class="shop-now-button btn btn-ls rounded-0 text-uppercase my-2">Discover Blends</a>
+            <a href="{% url 'products' %}?category=moka,aeropress,french_press,chemex" class="shop-now-button btn btn-ls rounded-0 text-uppercase my-2">Coffee Makers</a>
         </p>
     </div>
 </section>
