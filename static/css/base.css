@@ -52,6 +52,11 @@ body {
     z-index: -1;
 }
 
+/* SORT PRODUCTS BADGE */
+a.category-badge > span.badge:hover{
+    color: rgb(136, 38, 38);
+    background: rgb(114, 39, 39);
+}
 
 /* from Bulma */
 .icon {
