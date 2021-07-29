@@ -295,3 +295,10 @@ a.category-badge > span.badge:hover{
 .color-p {
     color: rgba(231, 224, 224, 0.952);
 }
+
+/* OUR TEAM    */
+
+.our-tem {
+    line-height: 2rem;
+    letter-spacing: 0.1em;
+}

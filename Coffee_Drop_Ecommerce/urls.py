@@ -28,4 +28,5 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('ablog/', include('ablog.urls')),
     path('newsletters/', include('newsletters.urls')),
+    path('', include('about.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
