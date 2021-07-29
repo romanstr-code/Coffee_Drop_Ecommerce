@@ -1,3 +1,5 @@
+/*     Stripe       */
+
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
@@ -29,6 +31,8 @@
     position: relative;
     right: .5rem;
 }
+
+/*.    Payment Form       .*/
 
 #payment-form .form-control,
 #card-element {

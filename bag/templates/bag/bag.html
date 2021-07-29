@@ -11,7 +11,9 @@
 {% endblock %}
 
 {% block content %}
+<!-- Page Overlay -->
     <div class="overlay"></div>
+    <!-- Container / Shopping Bag div -->
     <div class="container mb-2">
         <div class="row">
             <div class="col">
@@ -23,6 +25,7 @@
 
         <div class="row">
             <div class="col">
+                <!-- If bag items division -->
                 {% if bag_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
@@ -55,6 +58,7 @@
                                         <p class="my-0 text-silver">${{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
+                                        <!-- Adjust Bag Form -->
                                         <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group">
@@ -82,6 +86,7 @@
                                                 </div>
                                             </div>
                                         </form>
+                                        <!-- Update / Remove -->
                                         <a class="update-link text-info"><small>Update</small></a>
                                         <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
                                     </td>
@@ -90,6 +95,7 @@
                                     </td>
                                 </tr>
                             {% endfor %}
+                            <!-- Table row Bag total / delivery and Grand total -->
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6 class="text-silver"><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>

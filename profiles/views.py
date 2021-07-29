@@ -7,18 +7,19 @@ from .forms import UserProfileForm
 
 from checkout.models import Order
 
+# Profile 
 @login_required
 def profile(request):
     """ Display the user's profile. """
     profile = get_object_or_404(UserProfile, user=request.user)
 
-    if request.method == 'POST':
-        form = UserProfileForm(request.POST, instance=profile)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Profile updated successfully')
+    if request.method == 'POST': # If request POST
+        form = UserProfileForm(request.POST, instance=profile) # Get userprofile
+        if form.is_valid(): # if form valid
+            form.save() # save form
+            messages.success(request, 'Profile updated successfully') # message success
         else:
-            messages.error(request, 'Update failed. Please ensure form is valid.')
+            messages.error(request, 'Update failed. Please ensure form is valid.') # message error
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
@@ -32,7 +33,7 @@ def profile(request):
 
     return render(request, template, context)
 
-
+# Order History
 def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
 

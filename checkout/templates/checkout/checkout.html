@@ -3,10 +3,12 @@
 {% load bag_tools %}
 
 {% block extra_css %}
+<!-- Checkout static css custom  -->
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
+<!-- Page Header -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -15,9 +17,12 @@
 {% endblock %}
 
 {% block content %}
+<!-- Page overlay -->
     <div class="overlay"></div>
+    <!-- Container division -->
     <div class="container">
         <div class="row">
+            <!-- Checkout div -->
             <div class="col">
                 <hr>
                 <h2 class="logo-font mb-4">Checkout</h2>
@@ -26,6 +31,7 @@
         </div>
 
         <div class="row">
+            <!-- Order summary -->
             <div class="col-12 col-lg-6 order-lg-last mb-5">
                 <p class="text-muted">Order Summary ({{ product_count }})</p>
                 <div class="row">
@@ -38,6 +44,7 @@
                 </div>
                 {% for item in bag_items %}
                     <div class="row">
+                        <!-- product detail div -->
                         <div class="col-2 mb-1">
                             <a href="{% url 'product_detail' item.product.id %}">
                                 {% if item.product.image %}
@@ -47,11 +54,13 @@
                                 {% endif %}
                             </a>
                         </div>
+                        <!-- Product name div -->
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                             <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                         </div>
+                        <!-- product price div -->
                         <div class="col-3 text-right">
                             <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </div>
@@ -71,6 +80,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Checkout division / checkout form -->
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
@@ -135,6 +145,7 @@
             </div>
         </div>
     </div>
+    <!-- loading_overlay -->
     <div id="loading-overlay">
         <h1 class="text-light logo-font loading-spinner">
             <span class="icon">
@@ -144,6 +155,7 @@
     </div>
 {% endblock %}
 
+<!-- stripe js checkout  -->
 {% block postloadjs %}
     {{ block.super }}
     {{ stripe_public_key|json_script:"id_stripe_public_key" }}
