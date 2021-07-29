@@ -9,9 +9,9 @@
         <div class="row">
             <div class="col-12 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h3 class=" site-heading my-4 mt-3 text-white text-center"> Welcome to my awesome Blog </h3>
-                    <p class="text-light text-center">We Love Django As much as you do..! &nbsp
-                    </p>
+                    <h3 class=" site-heading my-4 mt-3 text-white text-center"> Welcome to Coffee Drop Blog </h3>
+                    <h5 class="text-light text-center">We are happy to meet you..! &nbsp
+                    </h5>
                 </div>
             </div>
         </div>
@@ -20,14 +20,14 @@
 <div class="container">
     <div class="row">
         <!-- Blog Entries Column -->
-        <div class="col-md-8 mt-3 left">
+        <div class="col">
             {% for post in post_list %}
             <div class="card mb-4">
-                <div class="card-body">
+                <div class="card-body " style="background-color: #85c2be;">
                     <h2 class="card-title">{{ post.title }}</h2>
                     <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
                     <p class="card-text">{{post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+                    <a href="{% url 'post_detail' post.slug  %}" class="btn shop-now-button" data-toggle="tooltip" title="Click It">Read More</a>
                 </div>
             </div>
             {% endfor %}
@@ -37,3 +37,12 @@
 
 
 {%endblock%}
+
+{% block postloadjs %}
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+</script>
+{% endblock %}

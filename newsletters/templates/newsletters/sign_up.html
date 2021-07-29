@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h4 class="text-center">Subscribe for our weekly newsletter!</h4>
+            <h4 class="text-center text-white subscribe">Subscribe for our weekly newsletter!</h4>
             {% if messages %}
                 {% for message in messages %}
                 <div {% if message.tags %} class="{{ message.tags }}" {% endif %} role="alert"> 
@@ -15,7 +15,7 @@
                 </div>
                 {% endfor %}
             {% else %}
-            <form method="POST">
+            <form method="POST" class="text-white">
                 {% csrf_token %}
                 <div class="col-12 w-50 mx-auto">
                     {{ form|crispy }}
@@ -27,6 +27,9 @@
             {% endif %}
         </div>
     </div>
+    <h6 class="text-center">
+        <a class="text-danger" href="{% url 'newsletter_unsubscribe' %}">Want to leave...?</a>
+    </h6>
 </div>
 
 {% block footer %}

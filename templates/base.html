@@ -129,7 +129,7 @@
     <!-- Banner  -->
     <div id="delivery-banner " class="row text-center ">
       <div class="col bg-black delivery-banner-color">
-        <h4 class="logo-font my-2 ">Free delivery and coffee bag when by over ${{ free_delivery_threshold }}!</h4>
+        <h4 class="logo-font my-2 ">Free delivery and coffee bag when buy over ${{ free_delivery_threshold }}!</h4>
       </div>
     </div>
   </header>
@@ -211,6 +211,11 @@
             <li>
               <a href="{% url 'products' %}?sort=category&direction=asc" class="text-white">By Category</a>
             </li>
+            <hr>
+            <li>
+              <a href="{% url 'newsletter_signup' %}" class="text-white">Subscribe to Newsletter</a>
+            </li>
+            <hr>
           </ul>
         </div>
       </div>

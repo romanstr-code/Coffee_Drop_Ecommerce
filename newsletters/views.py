@@ -20,7 +20,7 @@ def newsletter_signup(request):
             messages.success(request,
                             'Your email has been submited to the database',
                             'alert alert-success alert-dismissible')
-            return redirect(reverse('home_blog'))
+
 
     context = {
         'form': form,

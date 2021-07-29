@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h4 class="text-center">We are sorry that you are leaving us!</h4>
+            <h4 class="text-center text-white">We are sorry that you are leaving us!</h4>
             {% if messages %}
                 {% for message in messages %}
                 <div {% if message.tags %} class="{{ message.tags }}" {% endif %} role="alert"> 
@@ -15,7 +15,7 @@
                 </div>
                 {% endfor %}
             {% else %}
-            <form method="POST">
+            <form class="text-white" method="POST">
                 {% csrf_token %}
                 <div class="col-12 w-50 mx-auto">
                     {{ form|crispy }}
