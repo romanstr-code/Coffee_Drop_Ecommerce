@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+<div class="overlay"></div>
+<div class="blog-container ">
+    <div class="my-5  text-center">
+        <h1 class="text-center text-white">Let use tell you some more
+        </h1>
+        <p class="mb-0 text-white">Here is a brief overview of our team and services </p>
+    </div>
+</div>
+<section class="projects-section pb-5">
+    <div class="container">
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="{% static 'images/team.jpg' %}" alt="Img croatia">
+            </div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-navy text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h3 class="text-white text-center">Our Team</h3>
+                            <h5 class="text-white our-tem text-center">
+                                Meet our team! <br>
+                                One of the best teams a coffee shop can ever have. They are professionals barista who
+                                like
+                                to serve coffee enthusiasts with best ever customer service and amazingly great
+                                products.<br>
+                                Tina, Mina and Yna.<br>
+                                Three fantasticly talanted barista. We are very proud that they are part of our team.
+                            </h5>
+                            <hr class="d-none d-lg-block mb-0 ml-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="{% static 'images/services.jpg' %}" alt="Services Img">
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-navy text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h3 class="text-white text-center">Our Products:</h3>
+                            <h5 class="text-white our-tem text-center">
+                                <li>
+                                    <a href="{% url 'products' %}?category=beans " class="text-white">Beans</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'products' %}?category=grounded" class="text-white">Ground</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'products' %}?category=moka,aeropress,french_press,chemex"
+                                        class="text-white">Coffee Makers</a>
+                                </li>
+                            </h5>
+                            <hr class="d-none d-lg-block mb-0 ml-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button to trips -->
+        <div class="text-center mt-5">
+            <a href="{% url 'home_blog' %}" class="btn shop-now-button">More In Our Blog</a>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
