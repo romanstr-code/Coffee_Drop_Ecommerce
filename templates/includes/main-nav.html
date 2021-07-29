@@ -1,5 +1,7 @@
+<!-- Nav Bar -->
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
+        <!-- SHOP LINKS -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-silver mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 SHOP
@@ -11,7 +13,7 @@
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
-
+        <!-- ALL PRODUCTS LINKS -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-silver mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Blends
@@ -22,7 +24,7 @@
                 <a href="{% url 'products' %}?category=beans,grounded" class="dropdown-item">All Products</a>
             </div>
         </li>
-
+        <!-- Coffee Makers -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-silver mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Coffee Maker
@@ -35,6 +37,7 @@
                 <a href="{% url 'products' %}?category=moka,aeropress,french_press,chemex" class="dropdown-item">All Coffee Makers</a>
             </div>
         </li>
+        <!-- About us / Contact Us / Check our Blog -->
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-silver" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About
