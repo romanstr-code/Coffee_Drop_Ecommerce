@@ -1,1 +1,1 @@
-web : gunicorn Coffee_Drop_Ecommerce.wsgi:application
+web: gunicorn Coffee_Drop_Ecommerce.wsgi:application
