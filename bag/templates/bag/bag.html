@@ -11,8 +11,11 @@
 {% endblock %}
 
 {% block content %}
+<!-- Page Overlay -->
     <div class="overlay"></div>
+    <!-- Page Container -->
     <div class="container mb-2">
+        <!-- Shoping Bag Division -->
         <div class="row">
             <div class="col">
                 <hr>
@@ -20,16 +23,18 @@
                 <hr>
             </div>
         </div>
-
+        <!-- Div Row Bag -->
         <div class="row">
             <div class="col">
                 {% if bag_items %}
                     <div class="d-block d-md-none">
+                        <!-- Bag / Bag-Total -->
                         <div class="row">
                             <div class="col">
                                 {% include "bag/bag-total.html" %}
                             </div>
                         </div>
+                        <!-- Bag / Bag Buttons -->
                         <div class="row">
                             <div class="col">
                                 {% include "bag/checkout-buttons.html" %}
@@ -37,17 +42,21 @@
                             </div>
                         </div>
                         {% for item in bag_items %}
+                        <!-- Bag / Bag product image -->
                             <div class="row">
                                 <div class="col-12 col-sm-6 mb-2">
                                     {% include "bag/product-image.html" %}
                                 </div>
+                                <!-- Bag / Bag Product Info -->
                                 <div class="col-12 col-sm-6 mb-2">
                                     {% include "bag/product-info.html" %}
                                 </div>
+                                <!-- Bag / Product price/subtotal -->
                                 <div class="col-12 col-sm-6 order-sm-last">
                                     <p class="my-0 text-white">Price Each: <em class="text-white">${{ item.product.price }}</em></p>
                                     <p class="text-white"><strong>Subtotal: </strong><em class="text-white">${{ item.product.price | calc_subtotal:item.quantity }}</em></p>
                                 </div>
+                                <!-- Bag / Bag quantity-form -->
                                 <div class="col-12 col-sm-6">
                                     {% include "bag/quantity-form.html" %}
                                 </div>
@@ -60,6 +69,7 @@
                             </a>	
                         </div>
                     </div>
+                    <!-- Table Division -->
                     <div class="table-responsive rounded d-none d-md-block">
                         <table class="table table-sm table-borderless">
                             <thead class="text-white">
@@ -74,15 +84,19 @@
 
                             {% for item in bag_items %}
                                 <tr>
+                                    <!-- Bag / bag product image -->
                                     <td class="p-3 w-25">
                                         {% include "bag/product-image.html" %}
                                     </td>
+                                    <!-- Bag / bag product info -->
                                     <td class="py-3">
                                         {% include "bag/product-info.html" %}
                                     </td>
+                                    <!-- Bag / bag product price-->
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price }}</p>
                                     </td>
+                                    <!-- Bag / bag product quantity form -->
                                     <td class="py-3 w-25">
                                         {% include "bag/quantity-form.html" %}
                                     </td>
@@ -104,6 +118,7 @@
                         </table>
                     </div>
                 {% else %}
+                <!-- Empty Bag / Redirect to Products -->
                     <p class="lead mb-5 text-white ">Your bag is empty.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">

@@ -3,8 +3,11 @@
 
 
 {% block content %}
+
+<!-- Sign Up Container -->
 <div class="container">
     <div class="row">
+        <!-- Subscribe Weekly letter Div -->
         <div class="col-12">
             <h4 class="text-center text-white subscribe">Subscribe for our weekly newsletter!</h4>
             {% if messages %}
@@ -15,6 +18,7 @@
                 </div>
                 {% endfor %}
             {% else %}
+            <!-- Submit Form For Newsletter -->
             <form method="POST" class="text-white">
                 {% csrf_token %}
                 <div class="col-12 w-50 mx-auto">
@@ -27,6 +31,7 @@
             {% endif %}
         </div>
     </div>
+    <!-- Unsubscribe From Newsletter Link -->
     <h6 class="text-center">
         <a class="text-danger" href="{% url 'newsletter_unsubscribe' %}">Want to leave...?</a>
     </h6>

@@ -10,7 +10,9 @@
 {% endblock %}
 
 {% block content %}
+    <!-- Page Overlay -->
     <div class="overlay"></div>
+    <!-- Product Management Division -->
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
@@ -20,9 +22,10 @@
                 <hr>
             </div>
         </div>
-
+        <!-- Form Division -->
         <div class="row">
             <div class="col-12 col-md-6">
+                <!-- Add Product Form -->
                 <form method="POST" action="{% url 'add_product' %}" class="form mb-2 text-white" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
@@ -32,6 +35,7 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %}
+                    <!-- Buttons -->
                     <div class="text-right">
                         <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
                         <button class="btn btn-black rounded-0" type="submit">Add Product</button>

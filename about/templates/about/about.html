@@ -4,20 +4,26 @@
 
 
 {% block content %}
+<!-- Page overlay -->
 <div class="overlay"></div>
-<div class="blog-container ">
+<!-- Message Container -->
+<div class="message-container ">
     <div class="my-5  text-center">
         <h1 class="text-center text-white">Let use tell you some more
         </h1>
         <p class="mb-0 text-white">Here is a brief overview of our team and services </p>
     </div>
 </div>
-<section class="projects-section pb-5">
+<!-- Team Section -->
+<section class="team-section pb-5">
+    <!-- Team Section -->
     <div class="container">
+        <!-- Our Team Image -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
             <div class="col-lg-6">
-                <img class="img-fluid" src="{% static 'images/team.jpg' %}" alt="Img croatia">
+                <img class="img-fluid" src="{% static 'images/team.jpg' %}" alt="Our Team Image">
             </div>
+            <!-- Our Team Content -->
             <div class="col-lg-6 order-lg-first">
                 <div class="bg-navy text-center h-100 project">
                     <div class="d-flex h-100">
@@ -38,12 +44,13 @@
                 </div>
             </div>
         </div>
-
-        <!-- Services -->
+        <!-- Our Products Division -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <!-- Products Image  -->
             <div class="col-lg-6">
-                <img class="img-fluid" src="{% static 'images/services.jpg' %}" alt="Services Img">
+                <img class="img-fluid" src="{% static 'images/services.jpg' %}" alt="Store staff">
             </div>
+            <!-- Links div our products -->
             <div class="col-lg-6">
                 <div class="bg-navy text-center h-100 project">
                     <div class="d-flex h-100">
@@ -71,7 +78,7 @@
         <div class="text-center mt-5">
             <a href="{% url 'home_blog' %}" class="btn shop-now-button">More In Our Blog</a>
         </div>
-
     </div>
 </section>
+
 {% endblock %}

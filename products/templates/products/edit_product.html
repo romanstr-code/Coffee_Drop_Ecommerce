@@ -10,7 +10,9 @@
 {% endblock %}
 
 {% block content %}
+    <!-- Page Overlay -->
     <div class="overlay"></div>
+    <!-- Call To edit div -->
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
@@ -20,9 +22,10 @@
                 <hr>
             </div>
         </div>
-
+        <!-- Form Division -->
         <div class="row">
             <div class="col-12 col-md-6">
+                <!-- Edit Form -->
                 <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2 text-white" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
@@ -32,6 +35,7 @@
                             {{ field }}
                         {% endif %}
                     {% endfor %}
+                    <!-- Buttons -->
                     <div class="text-right">
                         <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
                         <button class="btn btn-black rounded-0" type="submit">Update Product</button>
