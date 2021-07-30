@@ -175,7 +175,7 @@
           "name":"AeroPress Coffee Maker",
           "description":"One of the quickest and simplest ways to brew really excellent coffee, resulting in a smooth, complex cup in as little as thirty seconds.",
           "price":39,
-          "category":2,
+          "category":4,
           "image":"14aeropress.jpg"
        }
     },
@@ -187,7 +187,7 @@
           "name":"Bodum - Chambord French Press 3 Cup",
           "description":"The Bodum Chambord is a true original – the classic french press coffee maker designed in the fifties. The iconic design, now synonymous with the Bodum name, dates back to the 1930s. The Italian, Attilo Calimani, developed the principle behind this product during the 1930s. Bodum acquired Melior-Martin in 1991 and brought this icon to households worldwide. The Bodum Chambord was then further developed and improved to what it is today. It is an easy, practical method for brewing coffee. A favourite method of many. Product Features Brand: Bodum Range: Chambord Body Material: Heat-Resistant Borosilicate Glass Frame Material: Chrome-Plated Stainless Steel Handle & Lid Material: Plastic Filter Material: Stainless Steel Filter Lifespan: Permanent Colour: Silver Size: 3 Cup Capacity: 12oz",
           "price":4.95,
-          "category":2,
+          "category":6,
           "image":"15french.jpg"
        }
     },
@@ -199,7 +199,7 @@
           "name":"Chemex Classic Coffeemaker",
           "description":"The Chemex coffeemaker, together with Chemex-Bonded Coffee Filter, makes perfect coffee. Clear, pure, flavorful and without bitterness or sediment every time. The coffee only comes in contact with the scientifically designed filter and non-porous glass. With the Chemex method, you can make coffee as strong as you like without bitterness. Perfect for iced coffee and coffee flavoring for gourmet recipes.",
           "price":4.95,
-          "category":2,
+          "category":7,
           "image":"16chemex..jpg"
        }
     }
