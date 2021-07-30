@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-#es6(k-ksu%@(ij^i@&yk3^&n64c4_yj4fe$t_(qao=tu())!y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['romanstr-coffee-drop-ecommerce.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -125,12 +125,17 @@ WSGI_APPLICATION = 'Coffee_Drop_Ecommerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    } 
 
 
 
