@@ -522,4 +522,92 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 * [W3CValidator](https://validator.w3.org/)
 * [W3CSSValidator](https://jigsaw.w3.org/css-validator/#validate_by_uri)
 * [PEP8validator](http://pep8online.com/)
-* 
+
+## Testing<hr>
+
+### Functionality
+
+<!-- Testing NavBar -->
+
+- Navigation Bar
+
+- - i. Positioned correct on the page body.
+- - ii. Positioned correct on all screens.
+- - iii. Displays correct color.
+- - iv. Responsible adjusting to all screens.
+- - v. Links taking to correct direction.
+- - vi. Burger menu when clicked if collapses.
+- - vii. Search button activates a dropdown with the search bar.
+- - viii. Shopping bag icon brings the user to the shopping bag page.
+- - ix. When click burger shows all pages.
+- - x. Does links on burger works proper.
+- - xi. When Click on user icon drops down.
+- - xii. User icon links works correct.
+- - xiii. For Unsigned users does it shows register / login.
+- - xiv. For signed users does it show sign out.
+- - xv. Does search bar work when put search.
+
+<!-- Search bar -->
+
+- Search Bar
+
+- - i. Is search bar by default on all screens visible.
+- - ii. On small devices when clicked is search bar callapses.
+- - iii. Is the fontawesome icon visible.
+- - iv. Is the fontawesome background icon red.
+- - v. When looking something in search bar does it take user to correct location.
+
+<!-- Registration Page -->
+
+- Registration 
+
+- - i. Is register links works on all devices.
+- - ii. Is link to register take you to correct location.
+- - iii. Does registration form shows on all devices..
+- - iv. Does the registration form displays correct on all screens.
+- - v. When introduced erroneous information does Allauth display message.
+- - vi. Allauth will display a error form validation if email incorrect.
+- - vii. 'Sign Up' is clicked with a valid form, does user recieve a message to let  know that they have to validate their e-mail address.
+- - ix. When confirm email are the user re-directed to the Sign In page.
+- - x. After Sign In, is user redirected to their profile.
+- - xi. Does the profile creates atumatically after users registration.
+- - xii. 
+
+<!-- SIGN IN / OUT --->
+
+- Sign In
+
+- - i. Users can sign in with existing account.
+- - ii. Users can sign in with new created account.
+- - iii. If username/password incorrect form will display a validation error.
+- - iv. If password lost, does the form redirects you to password reset page?
+
+- Log Out
+
+- - i. When user log out is user removed from session.
+- - ii. After log out is user redirecte to home page.
+- - ii. Is user getting message that he was logged out.
+
+<!-- HOME PAGE -->
+
+- Home Page
+
+- * Is all content visible on the page.
+- * All links works correct.
+- * Is the page responsible on all devices.
+- * All buttons works and take shopper were he meant to arrive.
+- * Does shop now button take user to all products page.
+- * When click Check our blog does user arrive at that page.
+
+
+<!---  All Products   --->
+
+- All Products Page
+
+- * Can you sort product by... (price, rating, etc)
+- * When scroll page are all products displayed.
+- * Are all products laid out in a grid and a responsive design.
+- * On different screens does the grid resize.
+- * Does the product price, rating, category displayed on the card body.
+- * When clicked on product does user find himself on individual product description.
+
