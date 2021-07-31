@@ -796,7 +796,6 @@ iv. Tested By Friends / Relatives / Work Colleagues
 ## Deployment
 
 > ###  *Clone Local* <hr>
-<<<<<<< HEAD
 <h4>What will you need to do:</h4>
 
 <ol>
@@ -823,6 +822,3 @@ iv. Tested By Friends / Relatives / Work Colleagues
 <li>Run <em style="color: black">python3 manage.py migrate</em</li>
 <li>You should now be able to run the program by entering <em style="color: black">python3 app.py<em> into the terminal</li>
 </ol>
-=======
-<h4>What will you need:</h4>
->>>>>>> b0eb271061d3fc0847e792b957907f016bc19803
