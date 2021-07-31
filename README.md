@@ -344,4 +344,31 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 
 > <strong>MY PROFILE :</strong>
 
-- 
+- Profile Owner can see the order summary history.
+- User can update their billing information if he have new details.
+
+> <strong>BLOG :</strong>
+
+- Users are able to choose from multiple topics.
+- Are able to access the particular top.
+- Each Blog topic can be accessed by buttons, which have a tooltip calling for action.
+
+> <strong>BLOG DETAIL :</strong>
+
+- On top you can find the blog content its self.
+- Second is amount of comments users placed.
+- Then is a crispy form that offers user chance to add their own comment on that particular topic.
+
+> <strong>ABOUT US:</strong>
+
+- Top of page a welcome message from site owners.
+- Content about our team is on the left and image with the team on the right .
+- Store image that shows staff on the left and on the right is a list of shopp products wich you can access by clicking the link.
+- Next we have a button that calls to sign up for store newsletter.
+
+### Features to Impliment:
+
+- i. Contact Us.
+- ii. Google Map.
+- iii. Add products that have sizes (database already set up for products with sizes.)
+- iv. 
