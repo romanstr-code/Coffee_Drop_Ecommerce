@@ -801,10 +801,10 @@ iv. Tested By Friends / Relatives / Work Colleagues
 <ol>
 <li>Go to the project repository "repo you want to clone"</li>
 <li>Open Git and select clone from the repository tab. Enter source location " repo you want to clone " and the location you wish to store the files and press the clone button.</li>
-<li>Clone the project using <em style="color: black">git clone</em></li>
+<li>Clone the project using <em style="color: #DAA520">git clone</em></li>
 <li>Open your IDE. Travel to the directory where you stored the cloned files.</li>
-<li>Install requirements from requirements.txt file by entering <em style="color: black">pip3 install -r requirements.txt </em> in the terminal.</li>
-<li>Activate your virtual environment by <em style="color: black"> py -m venv virtual</em> into the terminal.</li>
+<li>Install requirements from requirements.txt file by entering <em style="color: #DAA520">pip3 install -r requirements.txt </em> in the terminal.</li>
+<li>Activate your virtual environment by <em style="color: #DAA520"> py -m venv virtual</em> into the terminal.</li>
 <li>Create an environment file <em style="color: black">env.py</em> to store environment variables. Add environment variables as shown:</li>
 <li>Run a PostgresSQL database. You can use if you want:</li>
 <li>
@@ -812,17 +812,17 @@ iv. Tested By Friends / Relatives / Work Colleagues
 [Dockerfile](https://hub.docker.com/_/postgres) 
 
 </li>
-<li><em style="color: black">os.environ.setdefault('SECRET_KEY', '')</em</li>
-<li><em style="color: black">os.environ.setdefault('STRIPE_PUBLIC_KEY', '')</em</li>
-<li><em style="color: black">os.environ.setdefault('STRIPE_SECRET_KEY', '')</em</li>
-<li><em style="color: black">os.environ.setdefault('STRIPE_WH_SECRET', '')</em</li>
-<li><em style="color: black">os.environ.setdefault('EMAIL_HOST_USER', '')</em</li>
-<li><em style="color: black">os.environ.setdefault('EMAIL_HOST_PASS', '')</em</li>
-<li><em style="color: black">os.environ.setdefault('EMAIL_HOST_USER', '')</em</li>
-<li><em style="color: black">os.environ.setdefault('AWS_ACCESS_KEY_ID', '')</em</li>
-<li><em style="color: black">os.environ.setdefault('AWS_SECRET_ACCESS_KEY', '')</em</li>
-<li><em style="color: black">os.environ.setdefault('DATABASE_URL', '')</em</li>
-<li>Add <em style="color: black">env.py</em> to a<em style="color: black"> .gitignore</em> file so sensitive data will not be pushed to GIT</li>
+<li><em style="color: #DAA520">os.environ.setdefault('SECRET_KEY', '')</em</li>
+<li><em style="color: #DAA520">os.environ.setdefault('STRIPE_PUBLIC_KEY', '')</em</li>
+<li><em style="color: #DAA520">os.environ.setdefault('STRIPE_SECRET_KEY', '')</em</li>
+<li><em style="color: #DAA520">os.environ.setdefault('STRIPE_WH_SECRET', '')</em</li>
+<li><em style="color: #DAA520">os.environ.setdefault('EMAIL_HOST_USER', '')</em</li>
+<li><em style="color: #DAA520">os.environ.setdefault('EMAIL_HOST_PASS', '')</em</li>
+<li><em style="color: #DAA520">os.environ.setdefault('EMAIL_HOST_USER', '')</em</li>
+<li><em style="color: #DAA520">os.environ.setdefault('AWS_ACCESS_KEY_ID', '')</em</li>
+<li><em style="color: #DAA520">os.environ.setdefault('AWS_SECRET_ACCESS_KEY', '')</em</li>
+<li><em style="color: #DAA520">os.environ.setdefault('DATABASE_URL', '')</em</li>
+<li><em style="color: #DAA520">env.py</em> to a <li><em style="color: #DAA520">.gitignore</em> file so sensitive data will not be pushed to GIT</li>
 <li>Run <em style="color: black">python3 manage.py migrate</em</li>
-<li>You should now be able to run the program by entering <em style="color: black">python3 app.py<em> into the terminal</li>
+<li>You should now be able to run the program by entering <li><em style="color: #DAA520">python3 app.py<em> into the terminal</li>
 </ol>
