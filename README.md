@@ -371,4 +371,7 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 - i. Contact Us.
 - ii. Google Map.
 - iii. Add products that have sizes (database already set up for products with sizes.)
-- iv. 
+- iv. Extend range of products.
+- v. Ability to rate product.
+
+# Database:
