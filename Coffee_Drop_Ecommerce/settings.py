@@ -19,6 +19,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 ALLOWED_HOSTS = ['romanstr-coffee-drop-ecommerce.herokuapp.com', 'localhost']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
