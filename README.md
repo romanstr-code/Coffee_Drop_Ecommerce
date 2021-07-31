@@ -215,12 +215,36 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 <details>
   <summary>Blog Detail Page </summary>
 
-  <h4 align="center">log Detail Page</h4>
+  <h4 align="center">Blog Detail Page</h4>
   <h1 align="center"><img src="wireframes/blog_detail_addcomment_desktop.png" width="80%"></h1>
-  <h4 align="center">log Detail Tablet</h4>
+  <h4 align="center">Blog Detail Tablet</h4>
   <h1 align="left"><img src="wireframes/blog_detail_addcomment_tablet.png" width="40%"></h1>
-  <h4 align="center">log Detail Mobile</h4>
+  <h4 align="center">Blog Detail Mobile</h4>
   <h1 align="right"><img src="wireframes/blog_detail_addcomment_mobile.png" width="40%"></h1>
+  
+</details>
+<!--Sign Up Page  -->
+<details>
+  <summary>Sign Up Page </summary>
+
+  <h4 align="center">Sign Up Page</h4>
+  <h1 align="center"><img src="wireframes/signup_desktop.png" width="80%"></h1>
+  <h4 align="center">Sign Up Tablet</h4>
+  <h1 align="left"><img src="wireframes/signup_tablet.png" width="40%"></h1>
+  <h4 align="center">Sign Up Mobile</h4>
+  <h1 align="right"><img src="wireframes/signup_mobile.png" width="40%"></h1>
+  
+</details>
+<!--Sign Up Page  -->
+<details>
+  <summary>Sign In Page </summary>
+
+  <h4 align="center">Sign In Page</h4>
+  <h1 align="center"><img src="wireframes/signin_desktop.png" width="80%"></h1>
+  <h4 align="center">Sign In Tablet</h4>
+  <h1 align="left"><img src="wireframes/signin_tablet.png" width="40%"></h1>
+  <h4 align="center">Sign In Mobile</h4>
+  <h1 align="right"><img src="wireframes/signin_mobile.png" width="40%"></h1>
   
 </details>
 
