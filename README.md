@@ -53,6 +53,7 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 - * Make closer connection with user by newsletter.
 - * Exceed all contenders with a better quality products, service and customers assistance.
 - * Provide unique blends by put a sholder to FairTrade coffee.
+
 <h1 align="center"><img src="usergoals/product_detail.png" width="80%"></h1>
 
 ## User Stories<br> <hr>
@@ -105,3 +106,119 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 - iv. As Management I would Like to be able to add new blog as a draft or post it directly.
 - v. As Management I would Like to be able to approve blog comments.
 - vi. As Management I would Like to be able to delete blog comments if needed.
+
+<hr>
+
+### Project Scope Plane 
+
+- Several project goals would be :
+
+* 1. Registration function
+* 2. Profile Page
+* 3. Products Review
+* 4. Product Detail Review
+* 5. Authorization
+* 6. System of Payment
+
+<hr>
+
+ <!-- Project Skeleton -->
+
+### Project Draft <hr>
+<!-- Wireframes section -->
+<details>
+<summary>All Wireframes</summary>
+
+[AllWireframes](https://github.com/romanstr-code/Coffee_Drop_Ecommerce/tree/main/wireframes)
+
+</details>
+
+<hr>
+<!-- Home -->
+<details>
+  <summary>Home Page</summary>
+
+  <h4 align="center">Home Page</h4>
+  <h1 align="center"><img src="wireframes/home_desktop.png" width="80%"></h1>
+  <h4 align="center">Home Tablet</h4>
+  <h1 align="left"><img src="wireframes/table_home.png" width="40%"></h1>
+  <h4 align="center">Home Mobile</h4>
+  <h1 align="right"><img src="wireframes/mobile_home.png" width="40%"></h1>
+  
+</details>
+<!-- Products -->
+<details>
+  <summary>Products Page</summary>
+
+  <h4 align="center">Products Page</h4>
+  <h1 align="center"><img src="wireframes/products_desktop.png" width="80%"></h1>
+  <h4 align="center">Products Tablet</h4>
+  <h1 align="left"><img src="wireframes/products_tablet.png" width="40%"></h1>
+  <h4 align="center">Products Mobile</h4>
+  <h1 align="right"><img src="wireframes/products_mobile.png" width="40%"></h1>
+  
+</details>
+<!-- Products Detail -->
+<details>
+  <summary>Products Detail</summary>
+
+  <h4 align="center">Products Detail Page</h4>
+  <h1 align="center"><img src="wireframes/product_detail_desktop.png" width="80%"></h1>
+  <h4 align="center">Products Detail Tablet</h4>
+  <h1 align="left"><img src="wireframes/product_detail_tablet.png" width="40%"></h1>
+  <h4 align="center">Products Detail Mobile</h4>
+  <h1 align="right"><img src="wireframes/product_detail_mobile.png" width="40%"></h1>
+  
+</details>
+<!-- Add Product -->
+<details>
+  <summary>Add Product </summary>
+
+  <h4 align="center">Add Product Page</h4>
+  <h1 align="center"><img src="wireframes/product_manageadd_desktop.png" width="80%"></h1>
+  <h4 align="center">Add Product Tablet</h4>
+  <h1 align="left"><img src="wireframes/product_manageadd_tablet.png" width="40%"></h1>
+  <h4 align="center">Add Product Mobile</h4>
+  <h1 align="right"><img src="wireframes/product_manageadd_mobile.png" width="40%"></h1>
+  
+</details>
+<!-- Edit Product -->
+<details>
+  <summary>Edit Product </summary>
+
+  <h4 align="center">Edit Product Page</h4>
+  <h1 align="center"><img src="wireframes/product_manageedit_desktop.png" width="80%"></h1>
+  <h4 align="center">Edit Product Tablet</h4>
+  <h1 align="left"><img src="wireframes/product_manageedit_tablet.png" width="40%"></h1>
+  <h4 align="center">Edit Product Mobile</h4>
+  <h1 align="right"><img src="wireframes/product_manageedit_mobile.png" width="40%"></h1>
+  
+</details>
+<!-- Blog Page -->
+<details>
+  <summary>Blog Page </summary>
+
+  <h4 align="center">Blog Page</h4>
+  <h1 align="center"><img src="wireframes/blog_desktop.png" width="80%"></h1>
+  <h4 align="center">Blog Page Tablet</h4>
+  <h1 align="left"><img src="wireframes/blog_tablet.png" width="40%"></h1>
+  <h4 align="center">Blog Page Mobile</h4>
+  <h1 align="right"><img src="wireframes/blog_mobile.png" width="40%"></h1>
+  
+</details>
+<!-- Blog Detail Page -->
+<details>
+  <summary>Blog Detail Page </summary>
+
+  <h4 align="center">log Detail Page</h4>
+  <h1 align="center"><img src="wireframes/blog_detail_addcomment_desktop.png" width="80%"></h1>
+  <h4 align="center">log Detail Tablet</h4>
+  <h1 align="left"><img src="wireframes/blog_detail_addcomment_tablet.png" width="40%"></h1>
+  <h4 align="center">log Detail Mobile</h4>
+  <h1 align="right"><img src="wireframes/blog_detail_addcomment_mobile.png" width="40%"></h1>
+  
+</details>
+
+### <strong>Colors used:</strong>
+
+<!-- Short Color Description -->
