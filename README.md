@@ -237,7 +237,21 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 <strong>Typography</strong>
 <!-- Typography Description -->
 
+- All arround store is just one well define font in Crimson. The font is installed for the user experience and nice readability.
+
 * - [GoogleFonts](https://fonts.google.com/)
 
   - - On all webstie :  <em>'Crimson'</em>.
   - - Backing up :  <em>sans-serif</em>.
+
+<strong>Imagery:</strong>
+
+  - - You can find images troughout the site.
+  - - Photos intent are to show to potential user what they are buying.
+  - - Photos was placed to attract the quest eye.
+  - - In background all over the site is the same image that indicates that is a clear ecommerce store that sells coffe.
+
+<hr>
+
+## Features<hr>
+
