@@ -52,7 +52,8 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 - * Allow all users to buy products .
 - * Make closer connection with user by newsletter.
 - * Exceed all contenders with a better quality products, service and customers assistance.
-- * Provide uniq blends by put a sholder to FairTrade coffee.
+- * Provide unique blends by put a sholder to FairTrade coffee.
+<h1 align="center"><img src="usergoals/product_detail.png" width="80%"></h1>
 
 ## User Stories<br> <hr>
 
@@ -73,5 +74,34 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 - 2. As a Friendly User I would like to have possibility to filter products by categories.
 - 3. As a Friendly User I would like to be able to have the search bar across all website pages.
 - 4. As a Friendly User I would like to have posibility to see the product price before deciding to access it. 
-- 5. As a Friendly User I would like 
-- 6. As a Friendly User I would like 
+- 5. As a Friendly User I would like to be able to quick access the product detail if I liked it.
+- 6. As a Friendly User I would like to be able to add it to the shop bag without making an account.
+- 7. As a Friendly User I would like to be able to increase amount of products selected.
+- 8. As a Friendly User I would like to be able to decrease the amount of products selected.
+- 9. As a Friendly User I would like to be able to se the rating if one.
+- 10. As a Friendly User I would like to be able to delete the products from my shopping bag.
+- 11. As a Friendly User I would like to be able to check the bag before finishing transaction.
+- 12. As a Friendly User I would like to be able to add my details.
+- 13. As a Friendly User I would like to be able to add a credit/debit card so I can pay for my order.
+- 14. As a Friendly User I would like to be able to recive a email of order confirmation.
+
+<hr>
+
+###  Regular User :
+
+- 1. As a Regular User I would like to LogIn / Out easy.
+- 2. As a Regular User I would like to have the possibility to see my personal profile order history if one.
+- 3. As a Regular User I would like to be able to read shop blog.
+- 4. As a Regular User I would like to leave a message on the particular blog that I like.
+- 5. As a Regular User I would like to recieve weekly newsletter about shop updates.
+
+<hr>
+
+### As Management :
+
+- i. As Management I would Like to have the chance to add new product to the shop.
+- ii. As Management I would Like to be able to edit product after adding.
+- iii. As Management I would Like to easy delete product if necessary.
+- iv. As Management I would Like to be able to add new blog as a draft or post it directly.
+- v. As Management I would Like to be able to approve blog comments.
+- vi. As Management I would Like to be able to delete blog comments if needed.
