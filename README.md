@@ -806,7 +806,11 @@ iv. Tested By Friends / Relatives / Work Colleagues
 <li>Install requirements from requirements.txt file by entering <em style="color: black">pip3 install -r requirements.txt </em> in the terminal.</li>
 <li>Activate your virtual environment by <em style="color: black"> py -m venv virtual</em> into the terminal.</li>
 <li>Create an environment file <em style="color: black">env.py</em> to store environment variables. Add environment variables as shown:</li>
-<li>Run a PostgresSQL database. You can use if you want [Dockerfile](https://hub.docker.com/_/postgres) 
+<li>Run a PostgresSQL database. You can use if you want:</li>
+<li>
+
+[Dockerfile](https://hub.docker.com/_/postgres) 
+
 </li>
 <li><em style="color: black">os.environ.setdefault('SECRET_KEY', '')</em</li>
 <li><em style="color: black">os.environ.setdefault('STRIPE_PUBLIC_KEY', '')</em</li>
