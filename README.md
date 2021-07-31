@@ -470,3 +470,51 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
           date_added = models.DateTimeField(auto_now_add=True)
 
 
+# Technologies Used<hr>
+<!-- Here Goes Tech Used -->
+
+### Languages 
+[HTML5](https://en.wikipedia.org/wiki/HTML5)
+[JavaScript](https://www.javascript.com/)
+[CSS3](https://en.wikipedia.org/wiki/CSS)
+[Python](https://www.python.org/)
+
+### Programs / Libraries / Frameworks
+
+- For Back-end
+<hr>
+
+* [Django](https://www.djangoproject.com/)
+* [Django Crispy Forms ](https://django-crispy-forms.readthedocs.io/en/latest/)
+* [Stripe ](https://stripe.com/ie)
+* [Psycopg2 ](https://pypi.org/project/psycopg2/)
+* [Gunicorn ](https://pypi.org/project/gunicorn/)
+* [Boto3 ](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+* [Pillow ](https://pillow.readthedocs.io/en/stable/)
+* [pip3 ](https://pip.pypa.io/en/stable//)
+* [SQlite3 ](https://www.sqlite.org/index.html)
+* [PostgreSQL](https://www.postgresql.org/)
+* [AWS S3](https://aws.amazon.com/)
+
+<hr>
+
+- For Front-End
+<hr>
+
+* [Jquery](https://jquery.com/)
+* [Bootstrap](https://bootstrap4.com/)
+* [GoogleFonts](https://fonts.google.com/)
+* [Font Awesome](https://fontawesome.com/)
+
+<hr>
+
+- Other
+
+* [GitPod](https://www.gitpod.io/)
+* [GitHub](https://github.com/)
+* [ideate](https://apps.apple.com/us/app/ideate-design-wireframe-ux/id1494036474)
+* [Heroku](http://heroku.com/)
+* [W3CValidator](https://validator.w3.org/)
+* [W3CSSValidator](https://jigsaw.w3.org/css-validator/#validate_by_uri)
+* [PEP8validator](http://pep8online.com/)
+* 
