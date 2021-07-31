@@ -255,3 +255,33 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 
 ## Features<hr>
 
+> ### Existing Features
+
+> <strong>Navigation Bar </stong> - - > Well positioned and easy to navigate.
+
+- - * Navigation bar is always on the top of the sreen therefore is easy for users to find.
+- - * Store name is on the navbar and have a meaning to redirect user to home page if clicked.
+- - * On mobile devices is a nice collapse burger menu.
+- - * Navigation links located at the top of page  store are well positioned and very easy to use.
+- - * Navigation links take the shopper to the page that matches name description of link.
+- - * Navigation links on smaller devices collapse in a burger menu.
+- - * Shopping cart and user icon always visible on the top right of the page and easy to use.
+
+
+> <strong>Links / Buttons</strong>
+
+- - * On specific pages, buttons have a well define color that point to user to access it.
+- - * Links a visible and redirect you to the fixed location
+- - * All links have a hover effect and are noticeably different than the rest of the text around them
+
+**Visible for all Users :**<br>
+
+- **All User have access to Home page**.<br>
+- **All User have access to Products Page**<br>
+- **All User have access to Detail Product Page**<br>
+- **All User have access to Shop Bag Page**<br>
+- **All User have access to Blog Page**<br>
+- **All User have access to Comment Blog Page**<br>
+- **All User have access to LogIn Page**<br>
+- **All User have access to Register Page**<br>
+- **All User have access to About Us Page**<br>
