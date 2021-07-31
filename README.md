@@ -611,3 +611,190 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 - * Does the product price, rating, category displayed on the card body.
 - * When clicked on product does user find himself on individual product description.
 
+<!-- Product Detail Page  -->
+
+- Product Detail Page
+
+- * Does product detail page displays product image.
+- * Does product detail page displays product title.
+- * Does product detail page displays product description.
+- * Does product detail page displays product quantity selector.
+- * Does product detail page displays product price.
+- * Does product detail page displays product add to bag button.
+- * Does product detail page displays product increment / decrement button and does they do their purpose.
+- * Does product detail page displays product when incresing the quantity of products more than 100 does it display maximum amount is under 100.
+- * Does product detail page give a message if you add product to the shopping bag.
+
+
+<!-- Profile Page  -->
+
+- Profile Page
+
+- *  Does the profile page displays crispy form on the left.
+* -  Does the profile page displays order history on the right.
+* - If you enter information in crispy form and press update does it saves.
+* - If you make a buying transaction will it update each time the order history.
+
+
+<!-- Shopping Bag -->
+
+- Shopping Bag
+
+- * If bag empty will the bag have a redirect button to keep shopping.
+- * If pressed the keep shopping bag will it take user to All products page.
+- * If add a product to the bag, will the message about product being in the bag will be displayed.
+- * If deleteing all products from the bag will the total amount of the cart will gone back to zero.
+- * If user wants to double amount of product can he do that.
+- * Does information about product being displayed.
+- * Will user get a message how much should he spent to get free delivery.
+- * Will user get a message that his delivery will be covered.
+- * If shopper want to go back to store to browse more can he.
+- * If click secure checkout is user redirected to checkout page.
+
+<!-- Checkout Page  -->
+
+- Checkout Page
+
+- * When arriving on checkout page is details form displayed.
+- * Does user see delivery, shipping, and dayment information.
+- * Does user see his order summury.
+- * If tick the box save profile will profile's info be saved.
+- * If untick the box will profile's info not be saved.
+- * If you decided to go bag to bag can you.
+- * If the user enters invalid card details, Stripe will return an error with an error message displayed.
+
+
+<!-- Blog Page -->
+
+- Blog Page
+
+- * On arriving on blog page are all blogs available to read.
+- * Does all blogs have a button to be accessed.
+- * Does the blog card body have a nice background color.
+- * Is the page responsible on all devices.
+- * When clicked read more buttons does it takes you to blog detail page.
+
+<!-- Blog Detail Page  -->
+
+- Blog Detail Page
+
+- * Arraving on individual blog conntent are you able to read entire blog.
+- * If user want to se the amount of comments of that particular content can he.
+- * If user want to add his comment can he.
+
+<!-- About Us Page  -->
+
+- About Us Page
+
+- * Arrived on about us page are user great warmly.
+- * Does the page have a image of their people.
+- * Does the image have a text description.
+- * Does the page have more images.
+- * Does the second image text links takes you to correct destination.
+- * Does the store people have have a newsletter to subscribe.
+- * If click subscribe to our newsletter does the link work corect.
+
+<!-- News Letter -->
+
+- News Letter
+
+- * After click button on about us page does it take you to separate page.
+- * Does the text being visible
+- * If introduced email will you get a message that you was signed up to news letter.
+- * If you want to unsubscribe from news letter, can you.
+
+<!-- Unsubscribe  -->
+
+- Unsubscribe from News Letter
+
+- * Under sign up form is a link to unsubscribe , is it linked correctly.
+- * Does it takes user to the unsubscribe page.
+- * If introduced user email does it unsubscribe work.
+- * Do user get a message that he was unsubscribe.
+
+<!-- Footer  -->
+
+- Footer
+
+- * Is footer respondig to all devices grid.
+- * Is footer on all devices with opacity reduced.
+- * Is footer visible on all devices
+- * Is the footer information visible.
+- * Is the shop products links work.
+- * Does the links takes you to correct location.
+- * Does the footer have a link to newsletter.
+- * Does the news letter link highlighted with two horizontal rules.
+
+
+## Testing More <hr>
+
+ i. **Tested on Web browsers** :<br>
+
+ - 1. [GoogleChrome](https://www.google.com/chrome/)
+ - 2. [Safari](https://www.apple.com/safari/)
+ - 3. [Mozzilla](https://en.wikipedia.org/wiki/Firefox)
+ - 4. [Explorer](https://www.microsoft.com/en-ie/download/internet-explorer.aspx)
+ - 5. [Opera](https://www.opera.com/)
+
+ i. **Viewed on Mobile Devices** : <br> 
+
+- 1. iPhone 12 Pro max
+- 2. iPhone 10 X max
+- 3. iPhone 11
+- 4. iPhone 10
+- 5. Galaxy S10
+- 6. Xiomi
+*Viewed on small divices on Google Developer Tools.*
+
+iii. **Viewed on Tablet** : <br>
+
+- 1. Ipad 
+- 2. Ipad Pro
+*As well as different tablets wich are in Google Developer Tools*
+
+iv. Tested By Friends / Relatives / Work Colleagues
+
+### Links
+
+- Went through all websites links 
+- Checked Link connection on all forms
+- Checked Pages conections.
+- Buttons conections.
+
+## Validators Used <hr>
+
+> #### Test CSS / HTML!
+ - 1. [CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_uri)
+ - 2. [Markup Validation Service](https://validator.w3.org/)
+
+ > #### Python3 !
+ - [PEP8validator](http://pep8online.com/)<br>
+ - * Used For PEP8 best Practice.<br>
+
+> #### JavaScript !
+ - Used JSHint for correctness of JS code.
+ - * [JSHint](https://jshint.com)
+
+
+ ### **Kown Bugs**
+
+ #### Desktop
+- - Sometimes some of the pages load slow.
+- - On the pages with button back to top because of opacity reduced for footer when arriving on the bottom of the page we cant click back to top button.
+- - Some text are being hard to read.
+- - On all coffee products page if you hover over buttons that need to take you to specific category is hard to read because of red color in background.
+
+#### Tablet 
+- - Some of the text is hard to read.
+- - On some pages on the tablet size as Ipad Pro some text and buttons look awkward.
+
+#### Mobile 
+- - Hard to read text on some pages.
+- - As well background image sometimes is not visible and is loading way to hard.
+
+
+## Deployment
+
+> ###  *Clone Local* <hr>
+<h4>What will you need:</h4>
+
