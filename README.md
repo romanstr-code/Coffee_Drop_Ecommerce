@@ -255,9 +255,9 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 
 ## Features<hr>
 
-> ### Existing Features
-
-> <strong>Navigation Bar </stong> - - > Well positioned and easy to navigate.
+ ### Existing Features
+<br>
+ <strong>Navigation Bar </stong> -  Well positioned and easy to navigate.
 
 - - * Navigation bar is always on the top of the sreen therefore is easy for users to find.
 - - * Store name is on the navbar and have a meaning to redirect user to home page if clicked.
@@ -274,7 +274,7 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 - - * Links a visible and redirect you to the fixed location
 - - * All links have a hover effect and are noticeably different than the rest of the text around them
 
-**Visible for all Users :**<br>
+> <strong>Visible for all Users :</strong>
 
 - **All User have access to Home page**.<br>
 - **All User have access to Products Page**<br>
@@ -285,3 +285,63 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 - **All User have access to LogIn Page**<br>
 - **All User have access to Register Page**<br>
 - **All User have access to About Us Page**<br>
+
+> <strong>Page Footer :</strong>
+
+- - * Footer is situated on the bottom of the page an all screens.
+- - * Company message about their passion for what they are doing is situated on the left side of the footer.
+- - * On the small screens the message is with intent to be visible first.
+- - * On the right side you can find Shop links to their Products.
+- - * On the right side you olso find Products to look by Price, rating or category.
+- - * With intent and with horizontal rule to eyecatch the shopper, in the same colon you can find the link to newsletter.
+
+### Pages Features:
+<br>
+
+> <strong>HOME :</strong>
+
+- Simple page full background page.
+- Navbar and links to shop products.
+- Search bar to look for specific item that shopper have in mind.
+- Clean page with a call to action message 
+- Inviting to check the store button.
+- End of page simple and clear footer.
+
+> <strong>PRODUCTS :</strong>
+
+- All products are well seen on all screens.
+- Products are displayed in a card body in you see from the begging the most important information about product (price,rating or category).
+- Each card body is clickable and can take you to that product page to look for detailed information.
+
+
+> <strong>PRODUCT DETAIL :</strong>
+
+- Clear big image of the product on the left that gives you opportunity for a better look.
+- If image to be clicked it takes you to a separate page, again for a better user experience.
+- On the right side shopper can find name of product and all description.
+- Go down shopper can find two well define buttons that give opportunity for browsing more the store or add that product to the shopping bag.
+
+> <strong>SHOP BAG :</strong>
+
+- Simple but easy to understant shopping bag.
+- It's planned to be displayed clean and visible on all devices screens.
+- Displaying specific info about product ( price, name, qty, bag total etc.)
+- If needed shopper can increase or decrease product amount that they selected.
+- Shopper can remove completly item from their bag.
+- Users have a choice of keep shopping or secure checkout in two well define buttons.
+
+> <strong>CHECKOUT :</strong>
+
+- On left side of the checkout page user can find a nice Checkout crispy form for delivery details.
+- A nice order summary you can find on the right side of the delivery details form.
+- On small devices order summary is displayed on the top and delivery details on the bottom.
+- Shoppper have the choice of saving their info in case has an account if not they got links to go and create an account.
+- Lastly user is provided with a secure way of adding their credit/debit card details.
+
+> <strong>CHECKOUT Succes :</strong>
+
+- On this page customer receives their order details with a message on the top right of the page that the order is processed and a confirmation letter will be sent on email provided by them.
+
+> <strong>MY PROFILE :</strong>
+
+- 
