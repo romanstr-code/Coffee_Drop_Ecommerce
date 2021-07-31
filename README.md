@@ -374,7 +374,7 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 - iv. Extend range of products.
 - v. Ability to rate product.
 
-# Database:
+## Database:<hr>
 
 - - Database used for Project.
 
@@ -388,6 +388,9 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 
 - Product App
 
+- - Handles Product Display and Individual Item Detil view.
+
+- - * Product Model - Stores Product Information.
 
           category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
           sku = models.CharField(max_length=254, null=True, blank=True)
@@ -398,3 +401,72 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
           rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
           image_url = models.URLField(max_length=1024, null=True, blank=True)
           image = models.ImageField(null=True, blank=True)
+
+- Category Model - Takes product items categories
+
+          name = models.CharField(max_length=254)
+
+- Checkout App 
+
+- - Is responsible for checkout pages as well as a view for buying a product and for payments.
+
+- - * Order Model. Have the responability to aquire information on each oder. This model will come to life when user occupy and completes the checkout form.
+
+
+          order_number = models.CharField(max_length=32, null=False, editable=False)
+          user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
+                                          null=True, blank=True, related_name='orders')
+          full_name = models.CharField(max_length=50, null=False, blank=False)
+          email = models.EmailField(max_length=254, null=False, blank=False)
+          phone_number = models.CharField(max_length=20, null=False, blank=False)
+          country = CountryField(blank_label='Country *', null=False, blank=False)
+          postcode = models.CharField(max_length=20, null=True, blank=True)
+          town_or_city = models.CharField(max_length=40, null=False, blank=False)
+          street_address1 = models.CharField(max_length=80, null=False, blank=False)
+          street_address2 = models.CharField(max_length=80, null=True, blank=True)
+          county = models.CharField(max_length=80, null=True, blank=True)
+          date = models.DateTimeField(auto_now_add=True)
+          delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
+          order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+          grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+          original_bag = models.TextField(null=False, blank=False, default='')
+          stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
+
+
+- Blog App
+
+- - Is tacking responsability to Post a blog.
+
+- - * Post Model. 
+
+          title = models.CharField(max_length=200, unique=True)
+          slug = models.SlugField(max_length=200, unique=True)
+          author = models.ForeignKey(
+              User, on_delete=models.CASCADE, related_name='blog_posts')
+          updated_on = models.DateTimeField(auto_now=True)
+          content = models.TextField()
+          created_on = models.DateTimeField(auto_now_add=True)
+          status = models.IntegerField(choices=STATUS, default=0)
+
+- - Comment model have the main purpose to offer opportunity to users to add comment.
+
+- - * Coment Model.
+
+          post = models.ForeignKey(
+          Post, on_delete=models.CASCADE, related_name='comments')
+          name = models.CharField(max_length=80)
+          email = models.EmailField()
+          body = models.TextField()
+          created_on = models.DateTimeField(auto_now_add=True)
+          active = models.BooleanField(default=False)
+
+- NewsLetter App
+
+- - Simple model to subscribe to news letter.
+
+- - * It takes eamil and the date when submited.
+
+          email = models.EmailField()
+          date_added = models.DateTimeField(auto_now_add=True)
+
+
