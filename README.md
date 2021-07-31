@@ -801,28 +801,112 @@ iv. Tested By Friends / Relatives / Work Colleagues
 <ol>
 <li>Go to the project repository "repo you want to clone"</li>
 <li>Open Git and select clone from the repository tab. Enter source location " repo you want to clone " and the location you wish to store the files and press the clone button.</li>
-<li>Clone the project using <em style="color: #DAA520">git clone</em></li>
+<li>Clone the project using <em>git clone</em></li>
 <li>Open your IDE. Travel to the directory where you stored the cloned files.</li>
-<li>Install requirements from requirements.txt file by entering <em style="color: #DAA520">pip3 install -r requirements.txt </em> in the terminal.</li>
-<li>Activate your virtual environment by <em style="color: #DAA520"> py -m venv virtual</em> into the terminal.</li>
-<li>Create an environment file <em style="color: black">env.py</em> to store environment variables. Add environment variables as shown:</li>
+<li>Install requirements from requirements.txt file by entering <em>pip3 install -r requirements.txt </em> in the terminal.</li>
+<li>Activate your virtual environment by <em> py -m venv virtual</em> into the terminal.</li>
+<li>Create an environment file <em>env.py</em> to store environment variables. Add environment variables as shown:</li>
 <li>Run a PostgresSQL database. You can use if you want:</li>
 <li>
 
 [Dockerfile](https://hub.docker.com/_/postgres) 
 
 </li>
-<li><em style="color: #DAA520">os.environ.setdefault('SECRET_KEY', '')</em</li>
-<li><em style="color: #DAA520">os.environ.setdefault('STRIPE_PUBLIC_KEY', '')</em</li>
-<li><em style="color: #DAA520">os.environ.setdefault('STRIPE_SECRET_KEY', '')</em</li>
-<li><em style="color: #DAA520">os.environ.setdefault('STRIPE_WH_SECRET', '')</em</li>
-<li><em style="color: #DAA520">os.environ.setdefault('EMAIL_HOST_USER', '')</em</li>
-<li><em style="color: #DAA520">os.environ.setdefault('EMAIL_HOST_PASS', '')</em</li>
-<li><em style="color: #DAA520">os.environ.setdefault('EMAIL_HOST_USER', '')</em</li>
-<li><em style="color: #DAA520">os.environ.setdefault('AWS_ACCESS_KEY_ID', '')</em</li>
-<li><em style="color: #DAA520">os.environ.setdefault('AWS_SECRET_ACCESS_KEY', '')</em</li>
-<li><em style="color: #DAA520">os.environ.setdefault('DATABASE_URL', '')</em</li>
-<li><em style="color: #DAA520">env.py</em> to a <li><em style="color: #DAA520">.gitignore</em> file so sensitive data will not be pushed to GIT</li>
-<li>Run <em style="color: black">python3 manage.py migrate</em</li>
-<li>You should now be able to run the program by entering <li><em style="color: #DAA520">python3 app.py<em> into the terminal</li>
+<li><em>os.environ.setdefault('SECRET_KEY', '')</em</li>
+<li>os.environ.setdefault('STRIPE_PUBLIC_KEY', '')</em</li>
+<li>os.environ.setdefault('STRIPE_SECRET_KEY', '')</em</li>
+<li>os.environ.setdefault('STRIPE_WH_SECRET', '')</em</li>
+<li>os.environ.setdefault('EMAIL_HOST_USER', '')</em</li>
+<li>os.environ.setdefault('EMAIL_HOST_PASS', '')</em</li>
+<li>os.environ.setdefault('EMAIL_HOST_USER', '')</em</li>
+<li>os.environ.setdefault('AWS_ACCESS_KEY_ID', '')</em</li>
+<li>os.environ.setdefault('AWS_SECRET_ACCESS_KEY', '')</em</li>
+<li>os.environ.setdefault('DATABASE_URL', '')</em</li>
+<li>env.py</em> to a <li><em>.gitignore</em> file so sensitive data will not be pushed to GIT</li>
+<li>Run <em>python3 manage.py migrate</em</li>
+<li>You should now be able to run the program by entering <li><em>python3 app.py<em> into the terminal</li>
 </ol>
+
+
+> ###  *Deployment to Heroku* <hr>
+
+<ol>
+<li>Go to Heroku.</li>
+<li>Login or Sign up.</li>
+<li>Once logged, create a new app.</li>
+<li>Give the app a name that will make sense to you.</li>
+<li>Select your closest region to you.</li>
+<li>Click create app.</li>
+<li>On resource tab, in add-ons bar add Heroku Postgres Database.</li>
+<li>To use Postgres you need to go back to gitpod.</li>
+<li>Install <em>dj-database-url</em> and <em>psycopg2-binary</em>.</li>
+<li>Once installed freeze requirements with <em>pip3 freeze > requirements.txt</em></li>
+<li>Set up database by going to <em>settings.py<e/>m> and import <em>dj-database-url</em>.</li>
+<li>In <em>settings.py</em> navigate to database settings and replace default database with a call to <em>dj_database_url.parse()</em>
+</li>
+<li>Add database URL from Heroku settings config vars inside parenthesis.</li>
+<li>Run migrations in gitpod <em>python3 manage.py migrate</em> to apply migrations and apply database.</li>
+<li>Import product data by entering <em>python3 manage.py loaddata categories</em> and <em>python3 manage.py loaddata products</em> Important!!! To be in this order</li>
+<li>Add superuser to log in with <em>python3 manage.py createsuperuser</em></li>
+<li><strong>Don't commit</strong> with Heroku database settings visible, change database back to original database URL before commit
+</li>
+<li>Install gunicorn and freeze requirements.</li>
+<li>Now we can create our Procfile that tells Heroku to create a web dyno.</li>
+<li>Temporarilly disable collect static by entering heroku <em>config:set DISAABLE_COLLECTSTATIC = 1  your name of the app </em></li>
+<li>Add Host name of heroku app to allowed settings.py, allow local host as well to allow access from gitpod.</li>
+<li>To push to heroku you may need to initialise your heroku git remote <em> heroku git:remote your name of the app </em></li>
+<li>Then push to heroku <em>git push heroku master</em</li>
+<li>We can set up to automatically push to heroku when we push to github by going to the heroku app.</li>
+<li>Go to deploy tab. In deployment select Github.</li>
+<li>Search for your repository and press connect.</li>
+<li>Scroll down to automatic deploys and enable them.</li>
+<li>Get secret key and add to heroku config settings.</li>
+<li>Go to settings.py remove secret key and replace with a call to get it from the environment *SECRET_KEY = os.environ.get('SECRET_KEY', '')</li>
+<li>Set debug to be True only if there is a variable called development in the environment DEBUG = 'DEVELOPMENT' in os.environ
+</li>
+</ol>
+
+- Something else.
+- - * On config vars Important to add all of this keys.
+
+                    AWS_ACCESS_KEY_ID	<your_aws_access__key>
+                    AWS_SECRET_ACCESS_KEY	<your_aws_secret_access_key>
+                    DATABASE_URL	generated automatically
+                    EMAIL_HOST_PASS	<your_email_key>
+                    EMAIL_HOST_USER	<your_email>
+                    SECRET_KEY	<your_secret_key>
+                    STRIPE_PUBLIC_KEY	<your_stripe_public_key>
+                    STRIPE_SECRET_KEY	<your_stripe_secret_key>
+                    STRIPE_WH_SECRET_CH	<your_stripe_webhook_key>
+                    STRIPE_WH_SECRET_SUB	<your_stripe_webhook_key>
+                    USE_AWS	True
+                    ALLOWED_HOSTS	<your-heroku-app-url>
+
+
+# Credits 
+
+### Code
+
+- - I want to thank Chris Zielinski for an amazing tutorial and great professional. I truly enjoy your teaching and knowledge about full stack web developement.
+- - At this topic want to add that almost entire project was based on Chris code, so here goes the, Thank you.
+
+- - Blog App I help myself out and took it entire from [DjangoCentral](https://djangocentral.com/building-a-blog-application-with-django/) and adjusted and linked to my project.
+- - Adding comments to blog as well took inspiration from [DajngoCentral](https://djangocentral.com/creating-comments-system-with-django/) and implimented in my blog model.
+
+- - Newsletter App I Inspired from [Stackoverflow](https://stackoverflow.com/)
+
+### Content
+
+- - Content was created by me and my best friend for the past one year [Google](https://www.google.com/).
+
+# Acknowledgements
+
+### My Mentor
+
+- - For the past year [Gerard McBride](https://www.linkedin.com/in/gerard-mcbride-586b32a4/) was very good guiding me in the correct direction and always cheer me up with hints. Thank you Gerry and I truly hope soon enough I will get the opportunity to change my career and become a developer.
+
+### [CodeInstitute](https://codeinstitute.net/)
+
+- Great school and great tutor, mentor, classmetes and customer support from you guys. Though I would say that the speed of studying for me as a full timer was extremely diffucult and on some point was thinking that was not gonna make it.
+Now looking back I can surely say that I enjoyed the study process with you and now I know I need to study even more.
+Hope will get my dream job and start working in Developement.
