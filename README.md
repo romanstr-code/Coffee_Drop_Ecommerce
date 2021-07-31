@@ -255,3 +255,5 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 
 ## Features<hr>
 
+> ### Existing Features
+
