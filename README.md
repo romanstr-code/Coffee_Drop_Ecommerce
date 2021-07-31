@@ -222,3 +222,22 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
 ### <strong>Colors used:</strong>
 
 <!-- Short Color Description -->
+
+- - Colors used:
+
+- In this project I opted to stay simple with colors so I choose to operate in area of green-ish light to brown for navbar. For the         buttons I applied light red for background and on ease in a color of red.  For delivery banner a green color to highlight the promotional message. On some links and messages I used boostrap class for yellow to point up to specific message.
+
+<!-- Icons Used  -->
+<strong>Icons Used</strong>
+
+<!--Icons -->
+
+* - [Fontawesome](fontawesome.com)
+
+<strong>Typography</strong>
+<!-- Typography Description -->
+
+* - [GoogleFonts](https://fonts.google.com/)
+
+  - - On all webstie :  <em>'Crimson'</em>.
+  - - Backing up :  <em>sans-serif</em>.
