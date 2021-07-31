@@ -807,7 +807,7 @@ iv. Tested By Friends / Relatives / Work Colleagues
 - - On the pages with button back to top because of opacity reduced for footer when arriving on the bottom of the page we cant click back to top button.
 - - Some text are being hard to read.
 - - On all coffee products page if you hover over buttons that need to take you to specific category is hard to read because of red color in background.
-- - On sign up Navigation bar causing difficulty, not staying on the top of the page.
+
 
 #### Tablet 
 - - Some of the text is hard to read.
