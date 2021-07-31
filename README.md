@@ -242,7 +242,7 @@ Had an idea about creating a ecommerce store for like a year already. This idea 
   <h4 align="center">Sign In Page</h4>
   <h1 align="center"><img src="wireframes/signin_desktop.png" width="80%"></h1>
   <h4 align="center">Sign In Tablet</h4>
-  <h1 align="left"><img src="wireframes/signin_tablet.png" width="40%"></h1>
+  <h1 align="left"><img src="wireframes/signin_tabler.png" width="40%"></h1>
   <h4 align="center">Sign In Mobile</h4>
   <h1 align="right"><img src="wireframes/signin_mobile.png" width="40%"></h1>
   
