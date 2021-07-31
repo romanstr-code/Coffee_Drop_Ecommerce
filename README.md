@@ -10,7 +10,7 @@ Last Milestone Project
 *<h1 align="center" style="color: grey">Coffee Drop Ecommerce</h1>*
 
 <!-- Live websige --->
-- * Live Project
+- Live Project
 
 [Coffee Drop](https://romanstr-coffee-drop-ecommerce.herokuapp.com/)
 
